@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <title>Temperature Converter</title>
+</head>
+<body>
+
+    <div class="container">
+            <h1>Temperature Converter
+                <i class="fa-solid fa-temperature-three-quarters fa-beat-fade fa-2lg" style="color: #000000;"></i>
+            </h1>
+        <div class="converter">
+            <label for="celsius">Celsius:</label>
+            <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+            <button onclick="convertToCelsius()">  <i class="fa-solid fa-arrow-right fa-beat"></i>  Convert to Fahrenheit</button>
+            <p id="result"></p>
+        </div>
+        <div class="converter">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
+            <button onclick="convertToFahrenheit()">  <i class="fa-solid fa-arrow-right fa-beat"></i>  Convert to Celsius  </button>
+            <p id="result2"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
